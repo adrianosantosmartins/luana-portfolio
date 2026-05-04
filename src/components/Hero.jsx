@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-image-bg">
-        <img src="/luana-perfil.png" alt="Luana Santos" />
+        <img src={`${import.meta.env.BASE_URL}luana-perfil.png`} alt="Luana Santos" />
       </div>
 
       <header className="navbar">
