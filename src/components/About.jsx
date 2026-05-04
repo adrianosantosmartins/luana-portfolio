@@ -6,7 +6,8 @@ function About() {
 
       <div className="about-left">
         <div className="about-photo">
-          <img src="/luana-perfil.png" alt="Luana Santos" />
+                  <img src={`${import.meta.env.BASE_URL}luana-perfil.png`} alt="Luana Santos" />
+
         </div>
       </div>
 
