@@ -1,0 +1,160 @@
+.services {
+  padding: 70px 7% 85px;
+  background: #fffaf7;
+  text-align: center;
+}
+
+.services h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  color: #3a2e2c;
+  margin-bottom: 4px;
+}
+
+.services-heart {
+  color: #e3aaa3;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 26px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.78);
+  min-height: 270px;
+  padding: 0 28px 28px;
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(128, 85, 78, 0.11);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 55px rgba(185, 119, 112, 0.2);
+}
+
+.service-icon {
+  width: 74px;
+  height: 74px;
+  margin-top: -10px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background: #f3cdc7;
+  color: #b86558;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 10px 25px rgba(185, 119, 112, 0.15);
+}
+
+.service-card h3 {
+  font-size: 21px;
+  line-height: 1.35;
+  color: #3a2e2c;
+  margin-bottom: 18px;
+}
+
+.service-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #6b5b59;
+  margin-bottom: 24px;
+}
+
+.service-link {
+  margin-top: auto;
+  text-decoration: none;
+  color: #b97770;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.service-link span {
+  font-size: 24px;
+  margin-left: 8px;
+  vertical-align: -2px;
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 55px 20px 65px;
+  }
+
+  .services h2 {
+    font-size: 30px;
+  }
+
+  .services-heart {
+    margin-bottom: 26px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .service-card {
+    min-height: auto;
+    padding: 22px 20px 24px;
+    border-radius: 18px;
+  }
+
+  .service-icon {
+    width: 58px;
+    height: 58px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .service-card h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+
+  .service-card p {
+    font-size: 13px;
+    line-height: 1.55;
+    margin-bottom: 16px;
+  }
+
+  .service-link {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    padding: 45px 16px 55px;
+  }
+
+  .services-grid {
+    gap: 14px;
+  }
+
+  .service-card {
+    padding: 18px 16px 20px;
+  }
+
+  .service-icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 12px;
+  }
+
+  .service-card h3 {
+    font-size: 18px;
+  }
+
+  .service-card p {
+    font-size: 12.5px;
+  }
+}
